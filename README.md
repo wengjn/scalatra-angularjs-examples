@@ -12,6 +12,8 @@ $ sbt
 
 sbt > compile
 sbt > container:start
+sbt > ~;copy-resources;aux-compile
+localhost:8080
 
 to run tests
 ============
