@@ -15,6 +15,9 @@ module.config ["$routeProvider", ($routeProvider) ->
 
     .when "/about",
       templateUrl: "/partials/about"
+	  
+    .when "/learn",
+      templateUrl: "/partials/learn"
 
     .when "/demo",
       templateUrl: "/partials/demo"

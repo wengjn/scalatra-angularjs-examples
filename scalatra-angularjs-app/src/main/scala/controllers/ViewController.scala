@@ -11,6 +11,11 @@ class ViewController extends ScalatraServlet with ScalateSupport  {
     jade("index")
   }
 
+  get("/hello/:name") {
+    // Matches "GET /hello/foo"
+    <p>Hello, {params("name")}</p>
+  }
+
   get("/:page") {
     findTemplate(params("page")) map { path =>
       contentType = "text/html"

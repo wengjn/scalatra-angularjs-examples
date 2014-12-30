@@ -5,6 +5,7 @@ module.controller "MenuCtrl", ["$scope", ($scope) ->
     menus: [
       {selected: true, title: "Home", href: "/#/home"},
       {selected: false, title: "About", href: "/#/about"},
+      {selected: false, title: "Learn", href: "/#/learn"},
       {selected: false, title: "Demo", href: "/#/demo"}
     ]
     click: (menu) ->
